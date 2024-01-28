@@ -66,8 +66,8 @@ public class ListBasics {
         // You can nest a loop inside another loop:
 
         List<String> people = List.of("sally", "fred");
-        for(String person : people) {
-            for(String word : magicWords) {
+        for(String word : magicWords) {
+            for(String person : people) {
                 System.out.println(person + " says " + word + "!");
             }
         }
@@ -121,7 +121,7 @@ public class ListBasics {
 
         // ...and that can give us the index of the last element:
 
-        String lastMagicWordAgain = magicWords.get(magicWords.size() -1);
+        String lastMagicWordAgain = magicWords.get(magicWords.size()-1);
         System.out.println("lastMagicWordAgain = " + lastMagicWordAgain);
 
         // Think about it: Why size() - 1 instead of just size()?
@@ -129,7 +129,7 @@ public class ListBasics {
         // OK then, what happens if we do this? Try running this main method and
         // see what happens:
 
-        // String willNotWork = magicWords.get(magicWords.size());
+        // String willNotWork = magicWords.get(magicWords.size());  ??? explain more 
 
         // If you run it the code, note that the program stops here, and none
         // of the lines below will run!
