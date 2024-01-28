@@ -121,7 +121,7 @@ public class ListBasics {
 
         // ...and that can give us the index of the last element:
 
-        String lastMagicWordAgain = magicWords.get(magicWords.size() - 1);
+        String lastMagicWordAgain = magicWords.get(magicWords.size() -1);
         System.out.println("lastMagicWordAgain = " + lastMagicWordAgain);
 
         // Think about it: Why size() - 1 instead of just size()?
@@ -129,7 +129,7 @@ public class ListBasics {
         // OK then, what happens if we do this? Try running this main method and
         // see what happens:
 
-        String willNotWork = magicWords.get(magicWords.size());
+        // String willNotWork = magicWords.get(magicWords.size());
 
         // If you run it the code, note that the program stops here, and none
         // of the lines below will run!
@@ -158,7 +158,7 @@ public class ListBasics {
         // Java also gives us the ability to _change_ what's in a list! Here’s
         // how you add a new element to the end of the list:
 
-        magicWords.add("expelliarmus");
+        // magicWords.add("expelliarmus");
 
         // Oops! What happened?! That code compiles. Why doesn't it run?
         //
@@ -220,7 +220,7 @@ public class ListBasics {
         // We can remove elements:
 
         mutableList.remove(3);            // Remove by position
-        mutableList.remove("school bus"); // Remove by value
+        mutableList.remove("school bus"); // Remove by value 
         System.out.println("mutableList = " + mutableList);
 
         // Remember when we got the exception above trying to add new magic
@@ -260,3 +260,4 @@ public class ListBasics {
         System.out.println("–––––– " + title + " ––––––");
     }
 }
+ 
